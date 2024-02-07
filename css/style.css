@@ -1,0 +1,103 @@
+/* ==========> google fonts <========== */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+/* ==========> reset <========== */
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Protest Riot", sans-serif;  
+    list-style: none; 
+}
+
+
+/* ==========> variables <========== */
+:root{
+    /* background-color */
+    --color-one:#0C0D0E;
+    --color-two:#0E161C;
+    --color-three:#1F1E1F;
+    --color-four:#131011;
+
+    /* text-color */
+    --white-color:#FFF;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ==========> Base<========== */
+.app{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 5rem auto 0;
+    background:linear-gradient(var(--color-four),var(--color-two),var(--color-three),var(--color-one));
+    height: 750px;
+    color: var(--white-color);
+}
+.circle{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: 1px solid var(--white-color);
+    margin: 20px auto;
+    gap: 5px;
+    flex-direction: column;
+}
+.time{
+    font-size: 30px;
+}
+
+.time__contianer p{
+    text-align: center;
+}
+
+.controls__container{
+    margin-top: 1rem
+}
+button{
+    text-align: center;
+    border: 1px solid var(--white-color);
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    margin:0px 10px;
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--color-one);
+    color: var(--white-color);
+}
+
+.progressBar{
+    height: 2px ;
+    width: 0%;
+    background-color: var(--white-color);
+    margin: 10px auto;
+    border-radius: 15px ;  
+}
+.icon{
+    height: 30px;
+    width: 30px;
+}
+.cycel{
+    border: 1px solid #ffffff1c; 
+    margin: 2rem 2rem 0rem;
+    padding: 10px 20px;
+    height: 250px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: 2px 2px 2px #ffffff1c,
+                -2px -2px 2px #ffffff1c ;
+}
+.cycel::-webkit-scrollbar{
+    display: none;
+}
+.list__contianer li{
+    margin: 5px 0px;
+}
+
